@@ -2,7 +2,7 @@
     width: 100%;
     padding: $padding-sides;
     padding-top: 75px;
-    background: linear-gradient(180deg, $grad-very-light-red, $grad-light-red), url(../../images/bg-pattern-intro.svg);
+    background: linear-gradient(180deg, $grad-very-light-red, $grad-light-red), url(../images/bg-pattern-intro.svg);
     background-blend-mode: lighten;
     background-position: 0 0, 36% 33%;
     background-size: 400%;
@@ -64,7 +64,7 @@
     }
 
     @include media(x-large-dev) {
-        background: linear-gradient(150deg, $grad-very-light-red, $grad-light-red), url(../../images/bg-pattern-intro.svg);
+        background: linear-gradient(150deg, $grad-very-light-red, $grad-light-red), url(../images/bg-pattern-intro.svg);
         background-size: 250%;
         background-position: 0 0, 25% 50%;
         background-blend-mode: hue;
