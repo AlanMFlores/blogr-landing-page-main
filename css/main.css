@@ -304,7 +304,7 @@ li {
     margin-top: 250px;
     padding: 225px 25px 125px 25px;
     border-radius: 0 100px 0 100px;
-    background: linear-gradient(180deg, #2c2d3f, #3f4164), url(../../images/bg-pattern-circles.svg);
+    background: linear-gradient(180deg, #2c2d3f, #3f4164), url(../images/bg-pattern-circles.svg);
     background-blend-mode: lighten;
     background-size: cover;
     background-repeat: no-repeat;
