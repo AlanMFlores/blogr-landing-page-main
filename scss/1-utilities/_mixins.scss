@@ -1,0 +1,47 @@
+@mixin btn {
+    border-radius: 25px;
+    border: none;
+    padding: 12px 10px;
+    width: 130px;
+    font-family: $font-family--copy;
+    font-size: $font-size-copy;
+    font-weight: 500;
+}
+
+@mixin filled-btn {
+    background-color: $neu-white;
+    color: $pri-light-red;
+    
+}
+
+@mixin transp-btn {
+    color: $neu-white;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px $neu-white;
+
+}
+
+@mixin padding-sides {
+    padding: $padding-sides;
+}
+
+@mixin align-desk {
+    text-align: left;
+}
+
+@mixin copy-block {
+    width: 50%;
+}
+
+@mixin desk-feat {
+    display: flex;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin list-item {
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: $pri-very-dark-blue;
+}

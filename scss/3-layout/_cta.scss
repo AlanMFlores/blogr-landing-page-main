@@ -1,0 +1,72 @@
+.cta {
+    width: 100%;
+    padding: $padding-sides;
+    padding-top: 75px;
+    background: linear-gradient(180deg, $grad-very-light-red, $grad-light-red), url(../../images/bg-pattern-intro.svg);
+    background-blend-mode: lighten;
+    background-position: 0 0, 36% 33%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 100px;
+
+
+    &__intro {
+        padding-top: 100px;
+        padding-bottom: 125px;
+        text-align: center;
+        color: $neu-white;
+
+        .h1-title {
+            margin-bottom: 15px;
+        }
+
+        .copy {
+            line-height: 1.5;
+            margin-bottom: 50px;
+            color: $neu-white;
+        }
+
+        &--buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+}
+
+//----------Media-Queries----------// 
+
+.cta {
+    @include media(medium-dev) {
+        padding: 0 100px;
+        padding-top: 75px;
+        background-size: 300%;
+        background-position: 0 0, 42% 40%;
+    }
+
+    &__intro .h1-title {
+        @include media(medium-dev) {
+            font-size: 4rem;
+        }
+    }
+
+    .copy {
+        @include media(medium-dev) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.cta {
+    @include media(large-dev) {
+        background-size: 200%;
+
+    }
+
+    @include media(x-large-dev) {
+        background: linear-gradient(150deg, $grad-very-light-red, $grad-light-red), url(../../images/bg-pattern-intro.svg);
+        background-size: 250%;
+        background-position: 0 0, 25% 50%;
+        background-blend-mode: hue;
+    }
+}

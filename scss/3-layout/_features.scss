@@ -1,0 +1,115 @@
+.features {
+    padding-top: 50px;
+    text-align: center;
+
+    &__editor, &__application {
+        @include padding-sides;
+    }
+
+    .h1-title {
+        color: $pri-very-dark-blue;
+    }
+
+    &__infrastructure {
+        position: relative;
+        margin-top: 250px;
+        padding: 225px 25px 125px 25px;
+        border-radius: 0 100px 0 100px;
+        background: linear-gradient(180deg,hsl(237, 17%, 21%), hsl(237, 23%, 32%)), url(../../images/bg-pattern-circles.svg);
+        background-blend-mode: lighten;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0, center -250px;
+
+        .h1-title {
+            margin-bottom: 25px;
+            color: $neu-white;
+        }
+
+        .copy {
+            color: $neu-white
+        }
+    }
+
+    &__application {
+        margin-top: 50px;
+    }
+}
+
+//----------Media-Queries----------// 
+
+.features__infrastructure {
+    @include media(x-small-dev) {
+        padding: 175px 25px 100px 25px;
+    }
+    
+    @include media(small-dev) {
+        padding: 225px 25px 125px 25px;
+    }
+    
+    @include media(medium-dev) {
+        padding: 225px 100px 125px 100px;
+    }
+
+}
+
+.features__editor, .features__application {
+    @include media(medium-dev) {
+        padding: $padding-tablet;
+    }
+}
+
+.features__editor {
+    @include media(large-dev) {
+        @include desk-feat;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+}
+
+.features__application {
+    @include media(large-dev) {
+        @include desk-feat;
+        justify-content: flex-end;
+        margin-top: 100px;
+    }
+}
+
+.features__infrastructure {
+    @include media(large-dev) {
+        @include desk-feat;
+        margin-top: 0;
+        padding: 50px 100px;
+        overflow: visible;
+        justify-content: flex-end;
+    }
+}
+.features {
+    .h2-title, .copy {
+        @include media(large-dev) {
+            @include align-desk;
+        }
+    }
+}
+
+.features .copy__block {
+    @include media(large-dev) {
+        @include copy-block;
+    }
+}
+
+.features__infrastructure .h1-title {
+    @include media(large-dev) {
+        text-align: left;
+    }
+}
+
+.features__infrastructure .copy__block {
+    @include media(large-dev) {
+            @include media(large-dev) {
+                width: 45%;
+            }
+        }
+}

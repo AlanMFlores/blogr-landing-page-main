@@ -1,0 +1,23 @@
+.btn {
+    @include btn;
+}
+
+.start-free {
+    @include filled-btn;
+    cursor: pointer;
+}
+
+.start-free:hover {
+    background-color: $pri-very-light-red;
+    color: $neu-white;
+}
+
+.learn-more {
+    @include transp-btn;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: $neu-white;
+    color: $pri-light-red;
+}

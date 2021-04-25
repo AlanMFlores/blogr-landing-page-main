@@ -1,0 +1,40 @@
+//----------Typography----------// 
+
+//---Font-Size---// 
+
+p {
+    font-size: $font-size-copy;
+    font-family: $font-family--title;
+    font-weight: 500;
+    line-height: 1.8;
+    color: $neu-very-dark-grayish-blue;
+}
+
+.h1-title {
+    font-size: $font-size-h1;
+    font-family: $font-family--title;
+    font-weight: 700;
+    color: $neu-white;
+}
+
+.h2-title {
+    font-size: $font-size-h2;
+    font-family: $font-family--title;
+    color: $pri-very-dark-blue;
+    margin: 40px 0 25px 0;
+}
+
+.footer__title {
+    font-size: $font-size-copy;
+    font-family: $font-family--copy;
+}
+
+li {
+    list-style: none;
+    font-size: $font-size-copy;
+    font-family: $font-family--title;
+}
+
+#footer li {
+    margin-bottom: 10px;
+}

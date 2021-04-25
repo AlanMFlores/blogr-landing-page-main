@@ -1,0 +1,70 @@
+.blogr-logo {
+    width: 80px;
+}
+
+.editor-illustration, .laptop-illustration {
+    width: 100%;
+    max-width: 325px;
+}
+
+.mobiles-illustration {
+    width: 90%;
+    max-width: 340px;
+    position: absolute;
+    top: -175px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+//----------Media-Queries----------// 
+
+.mobiles-illustration {
+    @include media(large-dev) {
+        left: 100px;
+        top: 50%;
+        transform: translate(0, -50%);
+        max-width: 350px;
+    }
+
+    @include media(x-large-dev) {
+        max-width: 400px;
+        left: 150px;
+        
+    }
+}
+
+.editor-illustration, .laptop-illustration {
+    @include media(small-dev) {
+    }
+}
+
+.editor-illustration {
+    @include media(large-dev) {
+        position: absolute;
+        max-width: 550px;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: -15%;
+    }
+
+    @include media(x-large-dev) {
+        max-width: 600px;
+        right: -5%;
+    }
+
+}
+
+.laptop-illustration {
+    @include media(large-dev) {
+        position: absolute;
+        max-width: 550px;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: -15%;
+    }
+
+    @include media(x-large-dev) {
+        max-width: 600px;
+        left: -5%;
+    }
+}
